@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "cristianherrera",
+    "password": "321Blast",
+    "database": "TodoSQL",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "cristianherrera",
+    "password": "321Blast",
+    "database": "TodoSQL",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "cristianherrera",
+    "password": "321Blast",
+    "database": "TodoSQL",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="w3-card-4">
+
+      <header class="w3-container w3-blue">
+        <h1>Make a To Do List Here!</h1>
+        <form method="post" action="/">
+          <input type="text" name="list" placeholder="Add to List"/>
+          <button type="submit" >Add</button>
+        </form>
+      </header>
+
+      <div id="toDo" class="w3-container">
+        <h2>On Going Tasks:</h2>
+        <form method="post" action='/completed'>
+        {{#todo}}
+
+        <span>{{.}}</span><button type="submit" name="completed" value="{{.}}">Mark Complete!</button><br>
+
+        {{/todo}}
+        </form>
+      </div>
+
+      <footer id="didDo" class="w3-container w3-blue">
+        <h2>Completed Tasks:</h2>
+        </footer>
+        {{#done}}
+          <ul><li><span>{{.}}</span></li></ul>
+        {{/done}}
+    </div>
+  </body>
+</html>
